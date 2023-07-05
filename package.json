@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-    "deploy": "cp CNAME ./build/CNAME && gh-pages -d build"
+    "deploy": "cp CNAME ./build/CNAME && touch ./build/.nojekyll && gh-pages -d build"
   },
   "dependencies": {
     "@types/node": "20.3.3",
